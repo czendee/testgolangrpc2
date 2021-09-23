@@ -7,13 +7,13 @@ import (
 	"net/http"
 	"os"
 
-//	"github.com/gengo/grpc-gateway/runtime"
+
        "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-        mul "github.com/czendee/testgolangrpc2/genproto/goclient"
-        muls "github.com/czendee/testgolangrpc2/genproto/goserver"
+        mul  "github.com/czendee/testgolangrpc2/genproto/go"
+//        mul  "/genproto/go"
 
 	"strconv"
 	"fmt"	
@@ -120,7 +120,7 @@ func startHTTP(httpPort, grpcPort string) error {
 
 	gwmuxmultiplica := runtime.NewServeMux()
 	optsmul := []grpc.DialOption{grpc.WithInsecure()}
-	if err := muls.RegisterGreeterHandlerFromEndpoint(ctx, gwmuxmultiplica, "127.0.0.1:"+grpcPort, optsmul); err != nil {
+	if err := mul.RegisterGreeterHandlerFromEndpoint(ctx, gwmuxmultiplica, "127.0.0.1:"+grpcPort, optsmul); err != nil {
             
 		return err
 	}

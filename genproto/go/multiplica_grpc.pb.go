@@ -5,8 +5,8 @@ package __
 import (
 	context "context"
 	grpc "google.golang.org/grpc"
-//	codes "google.golang.org/grpc/codes"
-//	status "google.golang.org/grpc/status"
+	codes "google.golang.org/grpc/codes"
+	status "google.golang.org/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -45,10 +45,9 @@ func (c *greeterClient) SayMultiplica(ctx context.Context, in *MultiplicaRequest
 type GreeterServer interface {
 	// Sends a greeting
 	SayMultiplica(context.Context, *MultiplicaRequest) (*MultiplicaReply, error)
-//	mustEmbedUnimplementedGreeterServer()
+	mustEmbedUnimplementedGreeterServer()
 }
 
-/*
 // UnimplementedGreeterServer must be embedded to have forward compatible implementations.
 type UnimplementedGreeterServer struct {
 }
@@ -64,9 +63,6 @@ func (UnimplementedGreeterServer) mustEmbedUnimplementedGreeterServer() {}
 type UnsafeGreeterServer interface {
 	mustEmbedUnimplementedGreeterServer()
 }
-
-*/
-
 
 func RegisterGreeterServer(s grpc.ServiceRegistrar, srv GreeterServer) {
 	s.RegisterService(&Greeter_ServiceDesc, srv)
