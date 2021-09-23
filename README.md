@@ -21,11 +21,12 @@ git clone https://github.com/czendee/testgolangrpc2.git
 3.4 (o) cd ..
         cd ..
 
-8. go build main.go
+4. go build main.go
 
-9. go run  main.go
+5. go run  main.go
 
-
+     running on port 8090
+     
 ## Test using Postman
 
 
