@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option go_package = ".";
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.multiplica";
+option java_outer_classname = "MultiplicaProto";
+
+package multiplica;
+
+import "google/api/annotations.proto";
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayMultiplica (MultiplicaRequest) returns (MultiplicaReply) {
+    option (google.api.http) = {
+      post: "/v2/multiplica/greeter/say-multiplica"
+      body: "*"
+    };
+  }
+}
+
+// The request message containing the user's number.
+message MultiplicaRequest {
+  string numero = 1;
+  string veces =2;
+}
+
+// The response result containing the greetings
+message MultiplicaReply {
+  string message = 1;
+}
