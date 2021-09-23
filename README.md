@@ -12,15 +12,14 @@ git clone https://github.com/czendee/testgolangrpc2.git
 
 2. cd testgolangrpc2
 
-7. go get github.com/czendee/testgolangrpc2/genproto/go
+3.1 (o) go get github.com/czendee/testgolangrpc2/genproto/go
 
-3.  cd genproto/go 
+3.2 (o) cd genproto/go 
 
-4.    go build 
+3.3  (o)  go build 
 
-6. 
-cd ..
-cd ..
+3.4 (o) cd ..
+        cd ..
 
 8. go build main.go
 
