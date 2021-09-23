@@ -1,4 +1,4 @@
-module github.com/friendsofgo/wishlist
+module github.com/czendee/testgolangrpc2
 
 go 1.12
 
