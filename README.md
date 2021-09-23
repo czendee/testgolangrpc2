@@ -27,7 +27,7 @@ cd ..
 9. go run  main.go
 
 
-##test using Postman
+## Test using Postman
 
 
 #example:
