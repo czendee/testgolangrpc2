@@ -85,7 +85,7 @@ using Postman:   raw json
 result
 
 {
-    "message": "2.000000"
+    "message": "0.000000"
 }
 
 
@@ -105,7 +105,7 @@ using Postman:   raw json
 result
 
 {
-    "message": "2.000000"
+    "message": "0.000000"
 }
 
 
@@ -126,7 +126,7 @@ using Postman:   raw json
 result
 
 {
-    "message": "2.000000"
+    "message": "0.000000"
 }
 
 
