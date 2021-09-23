@@ -30,7 +30,7 @@ cd ..
 ## Test using Postman
 
 
-#example:
+### example:
 
 http://youtochigrpc.herokuapp.com/v2/multiplica/greeter/say-multiplica
 
@@ -49,7 +49,7 @@ result
 }
 
 
-# example:
+### example:
 
 http://youtochigrpc.herokuapp.com/v2/multiplica/greeter/say-multiplica
 
