@@ -7,10 +7,10 @@ other version of golang grpc without heroku to be executed locally
 
 git clone https://github.com/czendee/testgolangrpc2.git
 
-0. git clone https://github.com/czendee/testgolangrpc2.git
+1. git clone https://github.com/czendee/testgolangrpc2.git
 
 
-
+2. cd testgolangrpc2
 
 7. go get github.com/czendee/testgolangrpc2/genproto/go
 
@@ -25,6 +25,48 @@ cd ..
 8. go build main.go
 
 9. go run  main.go
+
+
+##test using Postman
+
+
+#example:
+
+http://youtochigrpc.herokuapp.com/v2/multiplica/greeter/say-multiplica
+
+method POST
+using Postman:   raw json
+
+{
+   "numero" :"18",
+    "veces" :"20"
+}
+
+result
+
+{
+    "message": "360.000000"
+}
+
+
+# example:
+
+http://youtochigrpc.herokuapp.com/v2/multiplica/greeter/say-multiplica
+
+method POST
+using Postman:   raw json
+
+{
+   "numero" :"1",
+    "veces" :"2"
+}
+
+result
+
+{
+    "message": "2.000000"
+}
+
 
 
 
