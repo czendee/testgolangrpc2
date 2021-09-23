@@ -32,7 +32,8 @@ cd ..
 
 ### example:
 
-http://youtochigrpc.herokuapp.com/v2/multiplica/greeter/say-multiplica
+
+http://127.0.0.1:8080/v2/multiplica/greeter/say-multiplica
 
 method POST
 using Postman:   raw json
@@ -51,7 +52,8 @@ result
 
 ### example:
 
-http://youtochigrpc.herokuapp.com/v2/multiplica/greeter/say-multiplica
+
+http://127.0.0.1:8080/v2/multiplica/greeter/say-multiplica
 
 method POST
 using Postman:   raw json
