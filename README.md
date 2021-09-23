@@ -11,3 +11,11 @@ git clone https://github.com/czendee/testgolangrpc2.git
 # execute the protoc to generate the pb.go, gb.go for the server and the client
 
 protoc -I ./proto  -I .   --go_out ./proto --go_opt paths=source_relative    --go-grpc_out ./genproto/goclient --go-grpc_opt paths=source_relative   --grpc-gateway_out ./genproto/goserver  --grpc-gateway_opt paths=source_relative proto/*.proto
+
+after creating it we need to do a 
+
+git add .
+
+git commit -m "adding the goclient and goserver pths
+
+git push
