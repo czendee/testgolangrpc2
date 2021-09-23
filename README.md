@@ -50,7 +50,7 @@ result
 }
 
 
-### example:
+### test case:
 
 
 http://127.0.0.1:8080/v2/multiplica/greeter/say-multiplica
@@ -69,8 +69,65 @@ result
     "message": "2.000000"
 }
 
+### test case:
 
 
+http://127.0.0.1:8080/v2/multiplica/greeter/say-multiplica
+
+method POST
+using Postman:   raw json
+
+{
+   "numero" :"0",
+    "veces" :"2"
+}
+
+result
+
+{
+    "message": "2.000000"
+}
+
+
+### test case:
+
+
+http://127.0.0.1:8080/v2/multiplica/greeter/say-multiplica
+
+method POST
+using Postman:   raw json
+
+{
+   "numero" :"0",
+    "veces" :"0"
+}
+
+result
+
+{
+    "message": "2.000000"
+}
+
+
+
+### test case:
+
+
+http://127.0.0.1:8080/v2/multiplica/greeter/say-multiplica
+
+method POST
+using Postman:   raw json
+
+{
+   "numero" :"ANA",
+    "veces" :"2"
+}
+
+result
+
+{
+    "message": "2.000000"
+}
 
 
 # if the multiplica.proto is modified , execute these steps 
