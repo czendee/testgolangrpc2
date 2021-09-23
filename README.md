@@ -72,7 +72,8 @@ result
 
 
 # if the multiplica.proto is modified , execute these steps 
-##the protoc to generate the pb.go, gb.go for the server and the client
+
+## the protoc to generate the pb.go, gb.go for the server and the client
 
 
 
